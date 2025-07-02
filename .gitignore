@@ -1,0 +1,32 @@
+# Node modules
+
+node\_modules/
+
+# Build outputs
+
+dist/
+build/
+
+# Logs
+
+npm-debug.log\*
+yarn-debug.log\*
+yarn-error.log\*
+
+# Environment variables
+
+.env
+
+# OS generated
+
+.DS\_Store
+Thumbs.db
+
+# Editor folders
+
+.vscode/
+.idea/
+
+# Swap files
+
+\*.swp
