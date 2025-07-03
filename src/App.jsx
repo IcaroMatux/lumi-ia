@@ -189,7 +189,9 @@ export default function App() {
         formData.append("file", blob);
       }
 
-      const response = await fetch("http://localhost:4000/api/chat", {
+      const API_BASE_URL = process.env.REACT_APP_API_URL;
+
+      const response = await fetch(`${API_BASE_URL}/api/chat`, {
         method: "POST",
         body: formData,
       });
