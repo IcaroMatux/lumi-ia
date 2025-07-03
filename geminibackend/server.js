@@ -17,7 +17,6 @@ app.use((req, res, next) => {
 });
 
 // Se quiser, pode manter o CORS também:
-import cors from "cors";
 app.use(cors({
   origin: "https://lumi-ai-roan.vercel.app",
 }));
