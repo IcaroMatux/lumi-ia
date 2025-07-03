@@ -9,7 +9,12 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://lumi-ai-roan.vercel.app"
+  ],
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
