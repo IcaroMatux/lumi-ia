@@ -9,16 +9,11 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-// Força manualmente o header CORS correto
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://lumi-ai-roan.vercel.app");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
-// Se quiser, pode manter o CORS também:
 app.use(cors({
   origin: "https://lumi-ai-roan.vercel.app",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());
