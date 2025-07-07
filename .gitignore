@@ -1,32 +1,29 @@
-# Node modules
+# dependencies
+node_modules/
 
-node\_modules/
-
-# Build outputs
-
-dist/
+# production build
 build/
+dist/
 
-# Logs
-
-npm-debug.log\*
-yarn-debug.log\*
-yarn-error.log\*
-
-# Environment variables
-
+# local env files
 .env
 
-# OS generated
+# log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-.DS\_Store
+# OS generated files
+.DS_Store
 Thumbs.db
 
-# Editor folders
-
+# IDEs and editors
 .vscode/
 .idea/
 
-# Swap files
+# optional: macOS system files
+.AppleDouble
+.LSOverride
 
-\*.swp
+# others (swap files)
+*.swp
